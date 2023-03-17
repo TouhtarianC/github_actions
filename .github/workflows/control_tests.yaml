@@ -1,4 +1,4 @@
-name: Pytest & flake8 control Push
+name: Control Push
 on: push
 jobs:
   qa:
@@ -22,5 +22,5 @@ jobs:
         run: |
           pytest
 
-     - name: Run flake8
-       uses: py-actions/flake8@v2
+      - name: Run flake8
+        uses: py-actions/flake8@v2
